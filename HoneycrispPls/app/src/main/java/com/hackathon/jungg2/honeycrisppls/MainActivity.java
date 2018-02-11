@@ -47,11 +47,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (isAvailable == ConnectionResult.SUCCESS) { //successful find of gservices
             return true;
         }
-        else if (api.isUserResolvableError(isAvailable)) {
+        else if (api.isUserResolvableError(isAvailable)) { //some other random error with gservices
             Dialog dialog = api.getErrorDialog(this, isAvailable, 0);
             dialog.show();
         }
-        else {
+        else { //no gservices at all
             Toast.makeText(this, "Cannot connect to Play Services", Toast.LENGTH_LONG).show();
         }
         return false;
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) { //assign to GoogleMap object to parameter
         gMap = googleMap;
-        goToLocation(48.736973,-122.4864025);
+        goToLocation(48.736973,-122.4864025); //change location of the map
 
     }
 
