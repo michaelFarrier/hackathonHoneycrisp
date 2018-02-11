@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Communications Facility"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/BLUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countBLUP"
+            app:srcCompat="@drawable/smallupvote" />
+
+
+        <TextView
+            android:id="@+id/BLUPcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/BL"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Basement" />
+
+        <TextView
+            android:id="@+id/BLDOWNcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/BLDOWN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countBLDOWN"
+            app:srcCompat="@drawable/smalldownvote" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/F1UP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countF1UP"
+            app:srcCompat="@drawable/smallupvote" />
+
+        <TextView
+            android:id="@+id/F1UPcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/F1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Floor 1 Lobby" />
+
+        <TextView
+            android:id="@+id/F1DOWNcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/F1DOWN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countF1DOWN"
+            app:srcCompat="@drawable/smalldownvote" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/F2UP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countF2UP"
+            app:srcCompat="@drawable/smallupvote" />
+
+        <TextView
+            android:id="@+id/F2UPcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/F2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Floor 2 Lobby" />
+
+        <TextView
+            android:id="@+id/F2DOWNcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/F2DOWN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countF2DOWN"
+            app:srcCompat="@drawable/smalldownvote" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/F3UP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countF3UP"
+            app:srcCompat="@drawable/smallupvote" />
+
+        <TextView
+            android:id="@+id/F3UPcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/F3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Floor 3 Lobby" />
+
+        <TextView
+            android:id="@+id/F3DOWNcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/F3DOWN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countF3DOWN"
+            app:srcCompat="@drawable/smalldownvote" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/F4UP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countF4UP"
+            app:srcCompat="@drawable/smallupvote" />
+
+        <TextView
+            android:id="@+id/F4UPcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/F4"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Floor 4 Lobby" />
+
+        <TextView
+            android:id="@+id/F4DOWNcounterValue"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/F4DOWN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countF4DOWN"
+            app:srcCompat="@drawable/smalldownvote" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
