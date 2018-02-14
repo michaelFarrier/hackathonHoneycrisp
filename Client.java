@@ -3,7 +3,7 @@ import java.net.*;
 
 public class Client {
     public static void main(String[] args) throws UnknownHostException, IOException{
-        Socket socket = new Socket("localhost",8888);
+        Socket socket = new Socket("140.160.137.148",8888);
         InetAddress name = InetAddress.getLocalHost();
 
         PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
